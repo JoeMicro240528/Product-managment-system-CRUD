@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="main.css">
+    <title>CRUDS</title>
+</head>
+<body>
+     <div class="crud">
+        <div class="head">
+            <h1>cruds</h1>
+            <p>product managment</p>
+        </div>
+     <div class="inputs">
+         <input type="text"  id="titel" placeholder="Titel">
+         <div class="price">
+             <input oninput="getTotal()" type="number"  id="price" placeholder="Price">
+             <input oninput="getTotal()" type="number"  id="taxes" placeholder="Taxes">
+             <input oninput="getTotal()" type="number"  id="ads" placeholder="Ads">
+             <input oninput="getTotal()" type="number"  id="discount" placeholder="Discount">
+             <small id="total"></small>
+         </div>
+             <input type="number"  id="count" placeholder="Count">
+             <input type="text"  id="category" placeholder="Category">
+             <button id="submit">Create</button>
+      </div>
+      <div class="output">
+         <div class="searchbox">
+             <input type="search" oninput="searchData(this.value)" id="search" placeholder="Search">
+             <div class="btnbox">
+                <button  onclick="getSearchMood(this.id)" id="searchTitel">Search By Titel</button>
+                <button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
+             </div>
+         </div>
+         <div id="deleteall">
+         </div>
+         <table>
+             <tr class="tablehead">
+                <th>ID</th>
+                <th>Titel</th>
+                <th>Price</th>
+                <th>Taxes</th>
+                <th>Ads</th>
+                <th>Discount</th>
+                <th>Total</th>
+                <th>Category</th>
+                <th>Update</th>
+                <th>Delete</th>
+             </tr>
+             <tbody id="tbody">   
+             </tbody>
+         </table>
+      </div>
+    </div>
+  <script src="master.js"></script>
+</body>
+</html>

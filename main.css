@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    --webkit--box-sizing: border-box;
+    --moz-box-sizing: border-box;
+      box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: #FFF;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    padding: 5px;
+    color: #FFF;
+    border-radius: 6px;
+    background-color: #111;
+    transition: all 0.3s;
+}
+input:focus{
+    background-color: #000;
+    transform: scale(1.1);
+}
+input::placeholder{
+    color: #FFF;
+    font-size: 15px;
+}
+.price{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+#total{
+    background-color: #ff2020;
+    padding: 5px;
+    border-radius: 6px;
+   
+}
+#total::before{
+  content: "Total:";
+}
+button{
+    width: 70%;
+    border: 0;
+    background-color: #7520ff;
+    height: 30px;
+    border-radius: 10px;
+    margin: 5px auto;
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+button:hover{
+  opacity: 1;
+  letter-spacing: 1.5px;
+}
+.btnbox{
+    display:flex ;
+    gap: 30px;
+}
+table{
+   width: 100%;
+   text-align: center;
+   margin: 15px 0;
+}
+table th, table td{
+   padding: 5px;
+}
+table th{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+}
+button#delete{
+    background-color: #ff2020;
+}
+.tablehead{
+    background-color: midnightblue;
+}
+#deleteAll{
+    margin: 25px 0;
+}
